@@ -10,7 +10,7 @@ const controllers = require("./controllers");
 app.use("/journal", controllers.journalController);
 app.use ("/user", controllers.userController);
 
-app.use(require("./middleware/validate-jwt"));
+//app.use(require("./middleware/validate-jwt"));
 
 dbConnection.authenticate()
   .then(() => dbConnection.sync())
@@ -31,3 +31,4 @@ dbConnection.authenticate()
  //  res.send('This is a message from the test endpoint on the server!')
 //});
 
+//"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjQzMDY4MzgzLCJleHAiOjE2NDMxNTQ3ODN9.pGK1ZPJYTxMt5ZAiF8LB4AT3zuG8vtI8uI0-QMRB0tA"
